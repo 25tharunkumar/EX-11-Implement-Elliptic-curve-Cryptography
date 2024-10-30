@@ -31,6 +31,7 @@ Bob sends his public key B to Alice.
 Alice computes the shared secret key as Secret=a-B. Bob computes the shared secret key as Secret-b-A.
 
 ## PROGRAM:
+```
 
 #include <stdio.h>
 
@@ -122,6 +123,7 @@ int main() {
 
     return 0;
 }
+```
 
 ## OUTPUT:
 ![Screenshot 2024-10-30 084501](https://github.com/user-attachments/assets/065631d7-ec6a-48e2-987e-2bb1cd3bf3d9)
