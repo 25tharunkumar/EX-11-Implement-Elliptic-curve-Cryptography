@@ -38,8 +38,6 @@ struct Point {
     long long x;
     long long y;
 };
-
-// Function to calculate the modular inverse
 long long mod_inverse(long long a, long long p) {
     long long m = p, t, q;
     long long x = 0, y = 1;
@@ -58,8 +56,6 @@ long long mod_inverse(long long a, long long p) {
 
     return y;
 }
-
-// Function for point addition
 struct Point point_addition(struct Point P, struct Point Q, long long a, long long p) {
     struct Point R;
 
@@ -78,8 +74,6 @@ struct Point point_addition(struct Point P, struct Point Q, long long a, long lo
 
     return R;
 }
-
-// Function for scalar multiplication
 struct Point scalar_multiplication(struct Point P, long long k, long long a, long long p) {
     struct Point R = P;
     k = k - 1;
